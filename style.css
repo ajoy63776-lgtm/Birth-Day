@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 3em;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px white; }
+  to { text-shadow: 0 0 25px yellow; }
+}
+
+#message {
+  font-size: 1.5em;
+  margin-top: 20px;
+  min-height: 80px;
+  white-space: pre-line;
+}
+
+img {
+  margin-top: 30px;
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px white;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #ff4e50;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff1c1c;
+}
+
+/* Confetti style */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  top: 0;
+}
